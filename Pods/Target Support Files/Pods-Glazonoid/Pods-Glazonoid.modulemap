@@ -1,0 +1,6 @@
+framework module Pods_Glazonoid {
+  umbrella header "Pods-Glazonoid-umbrella.h"
+
+  export *
+  module * { export * }
+}
