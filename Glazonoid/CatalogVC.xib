@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatalogVC" customModule="Glazonoid" customModuleProvider="target">
+            <connections>
+                <outlet property="catalogClcView" destination="X23-V3-1VD" id="YuO-b4-lr3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="X23-V3-1VD">
+                    <rect key="frame" x="0.0" y="80" width="414" height="782"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="taw-g0-iGK">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRY-qe-gWs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Catalog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWF-4R-byS">
+                            <rect key="frame" x="144.5" y="37" width="125" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="g14-qj-fpr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Yvk-n7-Xdq"/>
+                        <constraint firstAttribute="bottom" secondItem="uWF-4R-byS" secondAttribute="bottom" constant="8" id="gh6-fr-GAd"/>
+                        <constraint firstItem="uWF-4R-byS" firstAttribute="centerX" secondItem="HRY-qe-gWs" secondAttribute="centerX" id="qbJ-EH-M6z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X23-V3-1VD" secondAttribute="bottom" id="7dv-wr-uwp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HRY-qe-gWs" secondAttribute="trailing" id="Fd9-Bd-DOx"/>
+                <constraint firstItem="X23-V3-1VD" firstAttribute="top" secondItem="HRY-qe-gWs" secondAttribute="bottom" id="MfN-Oy-pKM"/>
+                <constraint firstItem="X23-V3-1VD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YNS-gp-hdm"/>
+                <constraint firstItem="HRY-qe-gWs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="e5y-66-iyy"/>
+                <constraint firstItem="HRY-qe-gWs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eV8-Vv-8Q0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X23-V3-1VD" secondAttribute="trailing" id="kaw-wj-6mR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="313.04347826086956" y="255.80357142857142"/>
+        </view>
+    </objects>
+</document>
