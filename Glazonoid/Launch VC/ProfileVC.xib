@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="Glazonoid" customModuleProvider="target">
+            <connections>
+                <outlet property="profileImage" destination="5Vp-CQ-uwW" id="Rhc-fq-mXP"/>
+                <outlet property="userEmail" destination="3gi-03-FHv" id="P9v-mb-Yzi"/>
+                <outlet property="userName" destination="x42-tf-tZK" id="FyC-j5-wnY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-Dw-5w3">
+                    <rect key="frame" x="116" y="673.5" width="182" height="41"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg3-Z7-Rhc">
+                            <rect key="frame" x="0.0" y="0.0" width="40.5" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Dg3-Z7-Rhc" secondAttribute="height" multiplier="1:1" id="Jra-br-LRd"/>
+                            </constraints>
+                            <state key="normal" image="whatsapp">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickWhatsappBtn:" destination="-1" eventType="touchUpInside" id="KXJ-Ls-LVW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRi-Vg-KBz">
+                            <rect key="frame" x="70.5" y="0.0" width="41" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nRi-Vg-KBz" secondAttribute="height" multiplier="1:1" id="AT3-pg-cNT"/>
+                            </constraints>
+                            <state key="normal" image="instagram-2">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickInstagramBtn:" destination="-1" eventType="touchUpInside" id="qeq-ku-ioJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyd-h7-KrP">
+                            <rect key="frame" x="141.5" y="0.0" width="40.5" height="41"/>
+                            <state key="normal" title="Button" image="facebook-3">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickFacebookBtn:" destination="-1" eventType="touchUpInside" id="AGF-H8-abu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Vp-CQ-uwW">
+                    <rect key="frame" x="147" y="64" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="blv-ui-e2x"/>
+                        <constraint firstAttribute="height" constant="120" id="hPU-Cp-46T"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JvV-mR-LAk">
+                    <rect key="frame" x="183" y="204" width="48" height="57"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x42-tf-tZK">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="23.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gi-03-FHv">
+                            <rect key="frame" x="0.0" y="33.5" width="48" height="23.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow us on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-6L-iIv">
+                    <rect key="frame" x="160" y="744.5" width="94.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="61b-g0-qC7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f33-fs-0oR">
+                    <rect key="frame" x="20" y="64" width="17.5" height="22"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="arrowtriangle.left.fill" catalog="system"/>
+                    <connections>
+                        <action selector="onClickBACKBTN:" destination="-1" eventType="touchUpInside" id="Tqw-qB-aH0"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="y8F-D9-gsq">
+                    <rect key="frame" x="102.5" y="258.5" width="209" height="307"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-Iq-cmJ">
+                            <rect key="frame" x="37" y="0.0" width="135" height="39"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="Add a product">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickAddProductBtn:" destination="-1" eventType="touchUpInside" id="1s8-9l-tgf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-DY-V9e">
+                            <rect key="frame" x="0.0" y="69" width="209" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <state key="normal" title="Bookmarked designs">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickSavedDesignsBtn:" destination="-1" eventType="touchUpInside" id="SPI-Bk-BDf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKv-9O-wga">
+                            <rect key="frame" x="19.5" y="139" width="170" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Request a call back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickCallBAckBtn:" destination="-1" eventType="touchUpInside" id="Rve-EB-NSd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-FH-bbx">
+                            <rect key="frame" x="37" y="205" width="135" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Product Videos">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickProductVideos:" destination="-1" eventType="touchUpInside" id="cci-cx-VxN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-VM-1c1">
+                            <rect key="frame" x="73.5" y="271" width="62" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickLogOutBtn:" destination="-1" eventType="touchUpInside" id="GTj-9E-MJz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f33-fs-0oR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5Qu-9z-4rO"/>
+                <constraint firstItem="ATQ-6L-iIv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Eg4-BU-hhB"/>
+                <constraint firstItem="mpU-Dw-5w3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.44" id="MEo-Nv-5LM"/>
+                <constraint firstItem="y8F-D9-gsq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Nsx-t8-ZZX"/>
+                <constraint firstItem="mpU-Dw-5w3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="Owu-gS-rSp"/>
+                <constraint firstItem="JvV-mR-LAk" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="Up9-cV-0fE"/>
+                <constraint firstItem="y8F-D9-gsq" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="WRo-oG-12g"/>
+                <constraint firstItem="5Vp-CQ-uwW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="YMN-dM-Cm1"/>
+                <constraint firstItem="f33-fs-0oR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bCk-Ii-Au4"/>
+                <constraint firstItem="ATQ-6L-iIv" firstAttribute="top" secondItem="mpU-Dw-5w3" secondAttribute="bottom" constant="30" id="dgw-L0-Tir"/>
+                <constraint firstAttribute="bottom" secondItem="ATQ-6L-iIv" secondAttribute="bottom" constant="30" id="h8o-nC-ZEN"/>
+                <constraint firstItem="JvV-mR-LAk" firstAttribute="top" secondItem="5Vp-CQ-uwW" secondAttribute="bottom" constant="20" id="hVw-Gd-dIg"/>
+                <constraint firstItem="mpU-Dw-5w3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="joR-A0-oUO"/>
+                <constraint firstItem="JvV-mR-LAk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xtK-9A-nTi"/>
+                <constraint firstItem="5Vp-CQ-uwW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="y4B-7F-NjZ"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="104.46428571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.left.fill" catalog="system" width="128" height="113"/>
+        <image name="facebook-3" width="64" height="64"/>
+        <image name="instagram-2" width="64" height="64"/>
+        <image name="whatsapp" width="64" height="64"/>
+    </resources>
+</document>

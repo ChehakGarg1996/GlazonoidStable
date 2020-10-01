@@ -16,16 +16,23 @@
 		79126F00250B762200F8DCF3 /* InnerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79126EFE250B762200F8DCF3 /* InnerCell.xib */; };
 		79126F08250E16E600F8DCF3 /* lf30_editor_gepsGd.json in Resources */ = {isa = PBXBuildFile; fileRef = 79126F07250E16E500F8DCF3 /* lf30_editor_gepsGd.json */; };
 		79126F0A250E17D700F8DCF3 /* lf30_editor_rD7M5H.json in Resources */ = {isa = PBXBuildFile; fileRef = 79126F09250E17D700F8DCF3 /* lf30_editor_rD7M5H.json */; };
-		79126F0D250E253200F8DCF3 /* RemoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79126F0B250E253200F8DCF3 /* RemoteCell.swift */; };
-		79126F0E250E253200F8DCF3 /* RemoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79126F0C250E253200F8DCF3 /* RemoteCell.xib */; };
 		79126F11250E297300F8DCF3 /* CatalogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79126F0F250E297300F8DCF3 /* CatalogVC.swift */; };
 		79126F12250E297300F8DCF3 /* CatalogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79126F10250E297300F8DCF3 /* CatalogVC.xib */; };
 		79126F15250E298400F8DCF3 /* TechnologyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79126F13250E298400F8DCF3 /* TechnologyVC.swift */; };
 		79126F16250E298400F8DCF3 /* TechnologyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79126F14250E298400F8DCF3 /* TechnologyVC.xib */; };
 		79126F19250E2C8900F8DCF3 /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79126F17250E2C8900F8DCF3 /* CatalogCell.swift */; };
 		79126F1A250E2C8900F8DCF3 /* CatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79126F18250E2C8900F8DCF3 /* CatalogCell.xib */; };
-		79126F1C2516799100F8DCF3 /* PopupViewTech.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79126F1B2516799000F8DCF3 /* PopupViewTech.xib */; };
+		7939987F251927D700F52593 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939987D251927D700F52593 /* ProfileVC.swift */; };
+		79399880251927D700F52593 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7939987E251927D700F52593 /* ProfileVC.xib */; };
+		79399883251A0C8300F52593 /* CallBackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79399881251A0C8300F52593 /* CallBackVC.swift */; };
+		79399884251A0C8300F52593 /* CallBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79399882251A0C8300F52593 /* CallBackVC.xib */; };
 		795665B7250276380077A85C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 795665B6250276380077A85C /* GoogleService-Info.plist */; };
+		796E448A25226F5500EE79EF /* UserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796E448925226F5500EE79EF /* UserHandler.swift */; };
+		799F97712524F33F005D5B54 /* RemoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F976F2524F33F005D5B54 /* RemoteVC.swift */; };
+		799F97722524F33F005D5B54 /* RemoteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799F97702524F33F005D5B54 /* RemoteVC.xib */; };
+		799F97972525FB59005D5B54 /* sophia_bella.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 799F97962525FB58005D5B54 /* sophia_bella.ttf */; };
+		799F979B252608B7005D5B54 /* AddProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F9799252608B7005D5B54 /* AddProductVC.swift */; };
+		799F979C252608B7005D5B54 /* AddProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799F979A252608B7005D5B54 /* AddProductVC.xib */; };
 		BE054C8524BEDD25004E4672 /* defaultHomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE054C8424BEDD25004E4672 /* defaultHomeScreenController.swift */; };
 		BE6D551C24B77D9B00081D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D551B24B77D9B00081D5A /* AppDelegate.swift */; };
 		BE6D551E24B77D9B00081D5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D551D24B77D9B00081D5A /* SceneDelegate.swift */; };
@@ -46,16 +53,23 @@
 		79126EFE250B762200F8DCF3 /* InnerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InnerCell.xib; sourceTree = "<group>"; };
 		79126F07250E16E500F8DCF3 /* lf30_editor_gepsGd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_gepsGd.json; sourceTree = "<group>"; };
 		79126F09250E17D700F8DCF3 /* lf30_editor_rD7M5H.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_rD7M5H.json; sourceTree = "<group>"; };
-		79126F0B250E253200F8DCF3 /* RemoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCell.swift; sourceTree = "<group>"; };
-		79126F0C250E253200F8DCF3 /* RemoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoteCell.xib; sourceTree = "<group>"; };
 		79126F0F250E297300F8DCF3 /* CatalogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogVC.swift; sourceTree = "<group>"; };
 		79126F10250E297300F8DCF3 /* CatalogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogVC.xib; sourceTree = "<group>"; };
 		79126F13250E298400F8DCF3 /* TechnologyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyVC.swift; sourceTree = "<group>"; };
 		79126F14250E298400F8DCF3 /* TechnologyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TechnologyVC.xib; sourceTree = "<group>"; };
 		79126F17250E2C8900F8DCF3 /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
 		79126F18250E2C8900F8DCF3 /* CatalogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogCell.xib; sourceTree = "<group>"; };
-		79126F1B2516799000F8DCF3 /* PopupViewTech.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewTech.xib; sourceTree = "<group>"; };
+		7939987D251927D700F52593 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7939987E251927D700F52593 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		79399881251A0C8300F52593 /* CallBackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallBackVC.swift; sourceTree = "<group>"; };
+		79399882251A0C8300F52593 /* CallBackVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallBackVC.xib; sourceTree = "<group>"; };
 		795665B6250276380077A85C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		796E448925226F5500EE79EF /* UserHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHandler.swift; sourceTree = "<group>"; };
+		799F976F2524F33F005D5B54 /* RemoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteVC.swift; sourceTree = "<group>"; };
+		799F97702524F33F005D5B54 /* RemoteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoteVC.xib; sourceTree = "<group>"; };
+		799F97962525FB58005D5B54 /* sophia_bella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sophia_bella.ttf; sourceTree = "<group>"; };
+		799F9799252608B7005D5B54 /* AddProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductVC.swift; sourceTree = "<group>"; };
+		799F979A252608B7005D5B54 /* AddProductVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductVC.xib; sourceTree = "<group>"; };
 		89D66B13F61AC1F4A65DD90A /* Pods-Glazonoid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glazonoid.debug.xcconfig"; path = "Target Support Files/Pods-Glazonoid/Pods-Glazonoid.debug.xcconfig"; sourceTree = "<group>"; };
 		B325CE865BBDD34356F07BB9 /* Pods-Glazonoid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glazonoid.release.xcconfig"; path = "Target Support Files/Pods-Glazonoid/Pods-Glazonoid.release.xcconfig"; sourceTree = "<group>"; };
 		BE054C8424BEDD25004E4672 /* defaultHomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultHomeScreenController.swift; sourceTree = "<group>"; };
@@ -91,6 +105,83 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		79399875251925CA00F52593 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				79126F0F250E297300F8DCF3 /* CatalogVC.swift */,
+				79126F10250E297300F8DCF3 /* CatalogVC.xib */,
+				79126F17250E2C8900F8DCF3 /* CatalogCell.swift */,
+				79126F18250E2C8900F8DCF3 /* CatalogCell.xib */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		793998762519262000F52593 /* HomeImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				79126EFE250B762200F8DCF3 /* InnerCell.xib */,
+				79126EFD250B762200F8DCF3 /* InnerCell.swift */,
+			);
+			path = HomeImageCell;
+			sourceTree = "<group>";
+		};
+		793998772519263F00F52593 /* Launch VC */ = {
+			isa = PBXGroup;
+			children = (
+				79126EF5250B60D900F8DCF3 /* HomeVC.swift */,
+				79126EF6250B60D900F8DCF3 /* HomeVC.xib */,
+				7939987D251927D700F52593 /* ProfileVC.swift */,
+				7939987E251927D700F52593 /* ProfileVC.xib */,
+				799F97962525FB58005D5B54 /* sophia_bella.ttf */,
+				79399881251A0C8300F52593 /* CallBackVC.swift */,
+				799F976F2524F33F005D5B54 /* RemoteVC.swift */,
+				799F97702524F33F005D5B54 /* RemoteVC.xib */,
+				79399882251A0C8300F52593 /* CallBackVC.xib */,
+				799F9799252608B7005D5B54 /* AddProductVC.swift */,
+				799F979A252608B7005D5B54 /* AddProductVC.xib */,
+				793998782519268700F52593 /* Outer Cell */,
+				793998762519262000F52593 /* HomeImageCell */,
+			);
+			path = "Launch VC";
+			sourceTree = "<group>";
+		};
+		793998782519268700F52593 /* Outer Cell */ = {
+			isa = PBXGroup;
+			children = (
+				79126EF9250B626700F8DCF3 /* HomeCell.swift */,
+				79126EFA250B626700F8DCF3 /* HomeCell.xib */,
+			);
+			path = "Outer Cell";
+			sourceTree = "<group>";
+		};
+		79399879251926A200F52593 /* Technology */ = {
+			isa = PBXGroup;
+			children = (
+				79126F13250E298400F8DCF3 /* TechnologyVC.swift */,
+				79126F14250E298400F8DCF3 /* TechnologyVC.xib */,
+			);
+			path = Technology;
+			sourceTree = "<group>";
+		};
+		7939987A251926AD00F52593 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				79126F09250E17D700F8DCF3 /* lf30_editor_rD7M5H.json */,
+				79126F07250E16E500F8DCF3 /* lf30_editor_gepsGd.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		7939987C251926DC00F52593 /* App dlegates */ = {
+			isa = PBXGroup;
+			children = (
+				BE6D551B24B77D9B00081D5A /* AppDelegate.swift */,
+				796E448925226F5500EE79EF /* UserHandler.swift */,
+				BE6D551D24B77D9B00081D5A /* SceneDelegate.swift */,
+			);
+			path = "App dlegates";
+			sourceTree = "<group>";
+		};
 		B98CDD8BFF085B2F4B6F0EEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,29 +212,15 @@
 		BE6D551A24B77D9B00081D5A /* Glazonoid */ = {
 			isa = PBXGroup;
 			children = (
-				BE6D551B24B77D9B00081D5A /* AppDelegate.swift */,
-				BE6D551D24B77D9B00081D5A /* SceneDelegate.swift */,
+				7939987C251926DC00F52593 /* App dlegates */,
 				BE6D551F24B77D9B00081D5A /* ViewController.swift */,
-				79126EF5250B60D900F8DCF3 /* HomeVC.swift */,
-				79126EF6250B60D900F8DCF3 /* HomeVC.xib */,
-				79126EF9250B626700F8DCF3 /* HomeCell.swift */,
-				79126F0F250E297300F8DCF3 /* CatalogVC.swift */,
-				79126F10250E297300F8DCF3 /* CatalogVC.xib */,
-				79126F17250E2C8900F8DCF3 /* CatalogCell.swift */,
-				79126F18250E2C8900F8DCF3 /* CatalogCell.xib */,
-				79126F13250E298400F8DCF3 /* TechnologyVC.swift */,
-				79126F14250E298400F8DCF3 /* TechnologyVC.xib */,
-				79126F1B2516799000F8DCF3 /* PopupViewTech.xib */,
-				79126EFA250B626700F8DCF3 /* HomeCell.xib */,
-				79126F09250E17D700F8DCF3 /* lf30_editor_rD7M5H.json */,
-				79126EFD250B762200F8DCF3 /* InnerCell.swift */,
-				79126F07250E16E500F8DCF3 /* lf30_editor_gepsGd.json */,
-				79126EFE250B762200F8DCF3 /* InnerCell.xib */,
-				79126F0B250E253200F8DCF3 /* RemoteCell.swift */,
-				79126F0C250E253200F8DCF3 /* RemoteCell.xib */,
+				793998772519263F00F52593 /* Launch VC */,
+				79399875251925CA00F52593 /* Catalog */,
+				79399879251926A200F52593 /* Technology */,
+				7939987A251926AD00F52593 /* Lottie */,
 				BE6D552124B77D9B00081D5A /* Main.storyboard */,
-				BE6D552424B77D9E00081D5A /* Assets.xcassets */,
 				BE6D552624B77D9E00081D5A /* LaunchScreen.storyboard */,
+				BE6D552424B77D9E00081D5A /* Assets.xcassets */,
 				BE6D552924B77D9E00081D5A /* Info.plist */,
 				795665B6250276380077A85C /* GoogleService-Info.plist */,
 				BE054C8424BEDD25004E4672 /* defaultHomeScreenController.swift */,
@@ -214,12 +291,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				79126F0A250E17D700F8DCF3 /* lf30_editor_rD7M5H.json in Resources */,
-				79126F1C2516799100F8DCF3 /* PopupViewTech.xib in Resources */,
 				79126EFC250B626700F8DCF3 /* HomeCell.xib in Resources */,
+				799F97722524F33F005D5B54 /* RemoteVC.xib in Resources */,
+				799F97972525FB59005D5B54 /* sophia_bella.ttf in Resources */,
 				BE6D552824B77D9E00081D5A /* LaunchScreen.storyboard in Resources */,
 				79126F16250E298400F8DCF3 /* TechnologyVC.xib in Resources */,
+				79399880251927D700F52593 /* ProfileVC.xib in Resources */,
+				79399884251A0C8300F52593 /* CallBackVC.xib in Resources */,
 				79126F00250B762200F8DCF3 /* InnerCell.xib in Resources */,
-				79126F0E250E253200F8DCF3 /* RemoteCell.xib in Resources */,
 				79126EF8250B60D900F8DCF3 /* HomeVC.xib in Resources */,
 				79126F12250E297300F8DCF3 /* CatalogVC.xib in Resources */,
 				BE6D553024B9AF9B00081D5A /* Default-568h@2x.png in Resources */,
@@ -227,6 +306,7 @@
 				795665B7250276380077A85C /* GoogleService-Info.plist in Resources */,
 				79126F1A250E2C8900F8DCF3 /* CatalogCell.xib in Resources */,
 				BE6D552524B77D9E00081D5A /* Assets.xcassets in Resources */,
+				799F979C252608B7005D5B54 /* AddProductVC.xib in Resources */,
 				BE6D552324B77D9B00081D5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,17 +377,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79399883251A0C8300F52593 /* CallBackVC.swift in Sources */,
+				7939987F251927D700F52593 /* ProfileVC.swift in Sources */,
 				79126F15250E298400F8DCF3 /* TechnologyVC.swift in Sources */,
 				79126F19250E2C8900F8DCF3 /* CatalogCell.swift in Sources */,
 				BE6D552024B77D9B00081D5A /* ViewController.swift in Sources */,
+				799F979B252608B7005D5B54 /* AddProductVC.swift in Sources */,
 				79126EF7250B60D900F8DCF3 /* HomeVC.swift in Sources */,
+				799F97712524F33F005D5B54 /* RemoteVC.swift in Sources */,
 				BE6D551C24B77D9B00081D5A /* AppDelegate.swift in Sources */,
+				796E448A25226F5500EE79EF /* UserHandler.swift in Sources */,
 				BE054C8524BEDD25004E4672 /* defaultHomeScreenController.swift in Sources */,
 				79126EFF250B762200F8DCF3 /* InnerCell.swift in Sources */,
 				79126EFB250B626700F8DCF3 /* HomeCell.swift in Sources */,
 				BE6D551E24B77D9B00081D5A /* SceneDelegate.swift in Sources */,
 				79126F11250E297300F8DCF3 /* CatalogVC.swift in Sources */,
-				79126F0D250E253200F8DCF3 /* RemoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = glazonoidautomates.Glazonoid;
 				PRODUCT_NAME = Glazonoid;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -482,6 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = glazonoidautomates.Glazonoid;
 				PRODUCT_NAME = Glazonoid;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

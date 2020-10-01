@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qV-mk-KF0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qV-mk-KF0">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,23 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBack" translatesAutoresizingMaskIntoConstraints="NO" id="VD6-Cy-6x3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="story" image="loginBack" translatesAutoresizingMaskIntoConstraints="NO" id="VD6-Cy-6x3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-Wm-OZ3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-Wm-OZ3">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JJu-Bp-E2Z"/>
                                 </constraints>
                                 <state key="normal" title="SIGN UP">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMB-dE-bEt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMB-dE-bEt">
                                 <rect key="frame" x="0.0" y="762" width="414" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cj1-Df-OLh"/>
                                 </constraints>
@@ -66,7 +68,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jMB-dE-bEt" firstAttribute="top" secondItem="iiW-kU-7os" secondAttribute="bottom" constant="20" id="1Pq-UD-AVw"/>
                             <constraint firstAttribute="trailing" secondItem="jMB-dE-bEt" secondAttribute="trailing" id="4oa-Oe-mv7"/>
@@ -84,7 +87,6 @@
                             <constraint firstItem="jMB-dE-bEt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vmv-X4-3Fs"/>
                             <constraint firstItem="jMB-dE-bEt" firstAttribute="top" secondItem="gd5-mn-6CX" secondAttribute="bottom" constant="20" id="w1I-uA-9EJ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PkW-XU-jPj"/>
                     <connections>
@@ -95,45 +97,13 @@
             </objects>
             <point key="canvasLocation" x="1046.376811594203" y="99.776785714285708"/>
         </scene>
-        <!--Default Home Screen Controller-->
-        <scene sceneID="1aw-eg-RoE">
-            <objects>
-                <viewController storyboardIdentifier="defaultHomeScreen" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jqI-QG-0iz" customClass="defaultHomeScreenController" customModule="Glazonoid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UbR-Mc-PeM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjI-OX-tOC">
-                                <rect key="frame" x="10" y="94" width="394" height="80"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="8Pc-Sq-AEx"/>
-                                </constraints>
-                                <state key="normal" title="Sign Out"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="AjI-OX-tOC" firstAttribute="top" secondItem="M0p-vT-omv" secondAttribute="top" constant="50" id="LXC-Kw-92W"/>
-                            <constraint firstItem="M0p-vT-omv" firstAttribute="trailing" secondItem="AjI-OX-tOC" secondAttribute="trailing" constant="10" id="Y53-jz-UBQ"/>
-                            <constraint firstItem="AjI-OX-tOC" firstAttribute="leading" secondItem="M0p-vT-omv" secondAttribute="leading" constant="10" id="ujB-h4-etm"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="M0p-vT-omv"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="q7D-f5-snz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dmQ-cK-cqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1713.0434782608697" y="101.78571428571428"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ak-W0-UIi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1qV-mk-KF0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="1qV-mk-KF0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="iWc-V9-094"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RUx-aP-yXK">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -150,5 +120,14 @@
         <image name="facebookLogin" width="66.5" height="66.5"/>
         <image name="googleLogin" width="66.5" height="66.5"/>
         <image name="loginBack" width="1250" height="1388.5"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

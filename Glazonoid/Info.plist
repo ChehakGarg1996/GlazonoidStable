@@ -4,6 +4,9 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>glazonoidIOS
+</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -31,6 +34,15 @@
 			<array>
 				<string>com.googleusercontent.apps.845031662262-jcpoi9tdcjnu0aa4ak7hrqomgi29uiqg</string>
 			</array>
+			<key>LSApplicationQueriesSchemes</key>
+			<array>
+				<string>instagram</string>
+				<string>fb</string>
+			</array>
+            <key>LSApplicationQueriesSchemes</key>
+             <array>
+                <string>whatsapp</string>
+             </array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

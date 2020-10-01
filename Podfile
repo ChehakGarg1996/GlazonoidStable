@@ -16,5 +16,8 @@ pod 'Firebase/Database'
 pod 'FacebookCore'
 pod 'FacebookLogin'
 pod 'lottie-ios'
-pod 'VHProgressBar', '~> 1.0'
+pod 'ChromaColorPicker'
+pod 'SDWebImage', '~> 5.9'
+pod 'LiveFader'
+
 end
