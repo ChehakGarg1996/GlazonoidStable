@@ -37,29 +37,29 @@ class ViewController: UIViewController, LoginButtonDelegate  {
         Loginmanager.logIn(permissions: ["public_profile", "email"], from: self) { (result, error) in    if let error = error {
             print("Failed to login: \(error.localizedDescription)")
             return
+        }
+        guard let accessToken = AccessToken.current
+        else {
+            print("Failed to get access token")
+            return
+        }
+        let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)    // Perform login by calling Firebase APIs
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                print("Login error: \(error.localizedDescription)")
+                let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
+                let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(okayAction)
+                self.present(alertController, animated: true, completion: nil)
+                return
             }
-            guard let accessToken = AccessToken.current
-                else {
-                    print("Failed to get access token")
-                    return
-            }
-            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)    // Perform login by calling Firebase APIs
-            Auth.auth().signIn(with: credential) { (user, error) in
-                if let error = error {
-                    print("Login error: \(error.localizedDescription)")
-                    let alertController = UIAlertController(title: "Login Error", message: error.localizedDescription, preferredStyle: .alert)
-                    let okayAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                    alertController.addAction(okayAction)
-                    self.present(alertController, animated: true, completion: nil)
-                    return
-                }
-                
-                let VC = HomeVC()
-                self.navigationController?.pushViewController(VC, animated: true)
-                //            self.performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
-                
-                // self.performSegue(withIdentifier: self.signInSegue, sender: nil)
-            }
+            
+            let VC = HomeVC()
+            self.navigationController?.pushViewController(VC, animated: true)
+            //            self.performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
+            
+            // self.performSegue(withIdentifier: self.signInSegue, sender: nil)
+        }
         }
         
         
@@ -86,7 +86,7 @@ class ViewController: UIViewController, LoginButtonDelegate  {
         //loginButton.sendActions(for: .touchUpInside)
         //loginButton.permissions = ["public_profile", "email"]
         if let token = AccessToken.current,
-            !token.isExpired {
+           !token.isExpired {
             let VC = HomeVC()
             self.navigationController?.pushViewController(VC, animated: true)
             // User is logged in, do work such as go to next view controller.
@@ -123,17 +123,17 @@ class ViewController: UIViewController, LoginButtonDelegate  {
     
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        if tempVal == 1{
-            let VC = HomeVC()
-            self.navigationController?.pushViewController(VC, animated: false)
-            //            performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
-            
-        }
-        
-        
-    }
+    //    override func viewDidAppear(_ animated: Bool) {
+    //
+    //        if tempVal == 1{
+    //            let VC = HomeVC()
+    //            self.navigationController?.pushViewController(VC, animated: false)
+    //            //            performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
+    //
+    //        }
+    //
+    //
+    //    }
     
     @objc func didSignIn()  {
         let VC = HomeVC()
@@ -145,6 +145,14 @@ class ViewController: UIViewController, LoginButtonDelegate  {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    @IBAction func onClickSignInBtn(_ sender: UIButton) {
+        let VC = SignInVC()
+        self.navigationController?.pushViewController(VC, animated: true)
+    }
+    @IBAction func onClickSignUpBtn(_ sender: UIButton) {
+        let VC = SignUpVC()
+        self.navigationController?.pushViewController(VC, animated: true)
     }
     
 }

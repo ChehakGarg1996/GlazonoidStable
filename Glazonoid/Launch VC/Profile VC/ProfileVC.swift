@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseAuth
-
+import GoogleSignIn
 
 class ProfileVC: UIViewController {
     
@@ -117,6 +117,10 @@ class ProfileVC: UIViewController {
             try firebaseAuth.signOut()
             if self.presentingViewController != nil {
                 self.dismiss(animated: false, completion: {
+                    UserDefaults.standard.removeObject(forKey: User.StorageKey).self
+                    
+//                    GIDSignIn.sharedInstance()?.disconnect()
+
                    self.navigationController!.popToRootViewController(animated: true)
                 })
             }

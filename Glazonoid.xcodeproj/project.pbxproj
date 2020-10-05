@@ -33,6 +33,10 @@
 		799F97972525FB59005D5B54 /* sophia_bella.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 799F97962525FB58005D5B54 /* sophia_bella.ttf */; };
 		799F979B252608B7005D5B54 /* AddProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F9799252608B7005D5B54 /* AddProductVC.swift */; };
 		799F979C252608B7005D5B54 /* AddProductVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799F979A252608B7005D5B54 /* AddProductVC.xib */; };
+		799F97BE252BAB2F005D5B54 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F97BC252BAB2F005D5B54 /* SignInVC.swift */; };
+		799F97BF252BAB2F005D5B54 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799F97BD252BAB2F005D5B54 /* SignInVC.xib */; };
+		799F97C3252BAF15005D5B54 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F97C1252BAF15005D5B54 /* SignUpVC.swift */; };
+		799F97C4252BAF15005D5B54 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799F97C2252BAF15005D5B54 /* SignUpVC.xib */; };
 		BE054C8524BEDD25004E4672 /* defaultHomeScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE054C8424BEDD25004E4672 /* defaultHomeScreenController.swift */; };
 		BE6D551C24B77D9B00081D5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D551B24B77D9B00081D5A /* AppDelegate.swift */; };
 		BE6D551E24B77D9B00081D5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6D551D24B77D9B00081D5A /* SceneDelegate.swift */; };
@@ -70,6 +74,10 @@
 		799F97962525FB58005D5B54 /* sophia_bella.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sophia_bella.ttf; sourceTree = "<group>"; };
 		799F9799252608B7005D5B54 /* AddProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductVC.swift; sourceTree = "<group>"; };
 		799F979A252608B7005D5B54 /* AddProductVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductVC.xib; sourceTree = "<group>"; };
+		799F97BC252BAB2F005D5B54 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		799F97BD252BAB2F005D5B54 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		799F97C1252BAF15005D5B54 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		799F97C2252BAF15005D5B54 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		89D66B13F61AC1F4A65DD90A /* Pods-Glazonoid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glazonoid.debug.xcconfig"; path = "Target Support Files/Pods-Glazonoid/Pods-Glazonoid.debug.xcconfig"; sourceTree = "<group>"; };
 		B325CE865BBDD34356F07BB9 /* Pods-Glazonoid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Glazonoid.release.xcconfig"; path = "Target Support Files/Pods-Glazonoid/Pods-Glazonoid.release.xcconfig"; sourceTree = "<group>"; };
 		BE054C8424BEDD25004E4672 /* defaultHomeScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultHomeScreenController.swift; sourceTree = "<group>"; };
@@ -130,15 +138,10 @@
 			children = (
 				79126EF5250B60D900F8DCF3 /* HomeVC.swift */,
 				79126EF6250B60D900F8DCF3 /* HomeVC.xib */,
-				7939987D251927D700F52593 /* ProfileVC.swift */,
-				7939987E251927D700F52593 /* ProfileVC.xib */,
+				799F97B9252B8557005D5B54 /* Profile VC */,
 				799F97962525FB58005D5B54 /* sophia_bella.ttf */,
-				79399881251A0C8300F52593 /* CallBackVC.swift */,
 				799F976F2524F33F005D5B54 /* RemoteVC.swift */,
 				799F97702524F33F005D5B54 /* RemoteVC.xib */,
-				79399882251A0C8300F52593 /* CallBackVC.xib */,
-				799F9799252608B7005D5B54 /* AddProductVC.swift */,
-				799F979A252608B7005D5B54 /* AddProductVC.xib */,
 				793998782519268700F52593 /* Outer Cell */,
 				793998762519262000F52593 /* HomeImageCell */,
 			);
@@ -182,6 +185,35 @@
 			path = "App dlegates";
 			sourceTree = "<group>";
 		};
+		799F97B3252B8523005D5B54 /* Add product */ = {
+			isa = PBXGroup;
+			children = (
+				799F9799252608B7005D5B54 /* AddProductVC.swift */,
+				799F979A252608B7005D5B54 /* AddProductVC.xib */,
+			);
+			path = "Add product";
+			sourceTree = "<group>";
+		};
+		799F97B6252B853E005D5B54 /* CallBack */ = {
+			isa = PBXGroup;
+			children = (
+				79399882251A0C8300F52593 /* CallBackVC.xib */,
+				79399881251A0C8300F52593 /* CallBackVC.swift */,
+			);
+			path = CallBack;
+			sourceTree = "<group>";
+		};
+		799F97B9252B8557005D5B54 /* Profile VC */ = {
+			isa = PBXGroup;
+			children = (
+				7939987D251927D700F52593 /* ProfileVC.swift */,
+				7939987E251927D700F52593 /* ProfileVC.xib */,
+				799F97B3252B8523005D5B54 /* Add product */,
+				799F97B6252B853E005D5B54 /* CallBack */,
+			);
+			path = "Profile VC";
+			sourceTree = "<group>";
+		};
 		B98CDD8BFF085B2F4B6F0EEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +246,10 @@
 			children = (
 				7939987C251926DC00F52593 /* App dlegates */,
 				BE6D551F24B77D9B00081D5A /* ViewController.swift */,
+				799F97BC252BAB2F005D5B54 /* SignInVC.swift */,
+				799F97BD252BAB2F005D5B54 /* SignInVC.xib */,
+				799F97C1252BAF15005D5B54 /* SignUpVC.swift */,
+				799F97C2252BAF15005D5B54 /* SignUpVC.xib */,
 				793998772519263F00F52593 /* Launch VC */,
 				79399875251925CA00F52593 /* Catalog */,
 				79399879251926A200F52593 /* Technology */,
@@ -294,6 +330,7 @@
 				79126EFC250B626700F8DCF3 /* HomeCell.xib in Resources */,
 				799F97722524F33F005D5B54 /* RemoteVC.xib in Resources */,
 				799F97972525FB59005D5B54 /* sophia_bella.ttf in Resources */,
+				799F97BF252BAB2F005D5B54 /* SignInVC.xib in Resources */,
 				BE6D552824B77D9E00081D5A /* LaunchScreen.storyboard in Resources */,
 				79126F16250E298400F8DCF3 /* TechnologyVC.xib in Resources */,
 				79399880251927D700F52593 /* ProfileVC.xib in Resources */,
@@ -301,6 +338,7 @@
 				79126F00250B762200F8DCF3 /* InnerCell.xib in Resources */,
 				79126EF8250B60D900F8DCF3 /* HomeVC.xib in Resources */,
 				79126F12250E297300F8DCF3 /* CatalogVC.xib in Resources */,
+				799F97C4252BAF15005D5B54 /* SignUpVC.xib in Resources */,
 				BE6D553024B9AF9B00081D5A /* Default-568h@2x.png in Resources */,
 				79126F08250E16E600F8DCF3 /* lf30_editor_gepsGd.json in Resources */,
 				795665B7250276380077A85C /* GoogleService-Info.plist in Resources */,
@@ -387,11 +425,13 @@
 				799F97712524F33F005D5B54 /* RemoteVC.swift in Sources */,
 				BE6D551C24B77D9B00081D5A /* AppDelegate.swift in Sources */,
 				796E448A25226F5500EE79EF /* UserHandler.swift in Sources */,
+				799F97BE252BAB2F005D5B54 /* SignInVC.swift in Sources */,
 				BE054C8524BEDD25004E4672 /* defaultHomeScreenController.swift in Sources */,
 				79126EFF250B762200F8DCF3 /* InnerCell.swift in Sources */,
 				79126EFB250B626700F8DCF3 /* HomeCell.swift in Sources */,
 				BE6D551E24B77D9B00081D5A /* SceneDelegate.swift in Sources */,
 				79126F11250E297300F8DCF3 /* CatalogVC.swift in Sources */,
+				799F97C3252BAF15005D5B54 /* SignUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
