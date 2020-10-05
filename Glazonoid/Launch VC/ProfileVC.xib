@@ -100,11 +100,11 @@
                         <action selector="onClickBACKBTN:" destination="-1" eventType="touchUpInside" id="Tqw-qB-aH0"/>
                     </connections>
                 </button>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="y8F-D9-gsq">
-                    <rect key="frame" x="102.5" y="258.5" width="209" height="307"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y8F-D9-gsq">
+                    <rect key="frame" x="102.5" y="291" width="209" height="352.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6P-Iq-cmJ">
-                            <rect key="frame" x="37" y="0.0" width="135" height="39"/>
+                            <rect key="frame" x="37" y="0.0" width="135" height="62.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <state key="normal" title="Add a product">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,7 +114,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-DY-V9e">
-                            <rect key="frame" x="0.0" y="69" width="209" height="40"/>
+                            <rect key="frame" x="0.0" y="72.5" width="209" height="62.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                             <state key="normal" title="Bookmarked designs">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,7 +124,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKv-9O-wga">
-                            <rect key="frame" x="19.5" y="139" width="170" height="36"/>
+                            <rect key="frame" x="19.5" y="145" width="170" height="62.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="Request a call back">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,7 +134,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-FH-bbx">
-                            <rect key="frame" x="37" y="205" width="135" height="36"/>
+                            <rect key="frame" x="37" y="217.5" width="135" height="62.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="Product Videos">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,7 +144,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-VM-1c1">
-                            <rect key="frame" x="73.5" y="271" width="62" height="36"/>
+                            <rect key="frame" x="73.5" y="290" width="62" height="62.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <state key="normal" title="Logout">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,13 +160,14 @@
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="f33-fs-0oR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5Qu-9z-4rO"/>
+                <constraint firstItem="y8F-D9-gsq" firstAttribute="top" secondItem="JvV-mR-LAk" secondAttribute="bottom" constant="30" id="7mW-xF-hfA"/>
                 <constraint firstItem="ATQ-6L-iIv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Eg4-BU-hhB"/>
                 <constraint firstItem="mpU-Dw-5w3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.44" id="MEo-Nv-5LM"/>
-                <constraint firstItem="y8F-D9-gsq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Nsx-t8-ZZX"/>
                 <constraint firstItem="mpU-Dw-5w3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="Owu-gS-rSp"/>
                 <constraint firstItem="JvV-mR-LAk" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="Up9-cV-0fE"/>
-                <constraint firstItem="y8F-D9-gsq" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="WRo-oG-12g"/>
+                <constraint firstItem="y8F-D9-gsq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Xws-m9-852"/>
                 <constraint firstItem="5Vp-CQ-uwW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="YMN-dM-Cm1"/>
+                <constraint firstItem="mpU-Dw-5w3" firstAttribute="top" secondItem="y8F-D9-gsq" secondAttribute="bottom" constant="30" id="ZFs-V5-pJR"/>
                 <constraint firstItem="f33-fs-0oR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bCk-Ii-Au4"/>
                 <constraint firstItem="ATQ-6L-iIv" firstAttribute="top" secondItem="mpU-Dw-5w3" secondAttribute="bottom" constant="30" id="dgw-L0-Tir"/>
                 <constraint firstAttribute="bottom" secondItem="ATQ-6L-iIv" secondAttribute="bottom" constant="30" id="h8o-nC-ZEN"/>

@@ -137,7 +137,7 @@ class HomeCell: UICollectionViewCell , UICollectionViewDataSource , UICollection
             self?.indexMain != nil ? self?.callBackAction?(self?.indexMain! ?? 0) : ()
         }
             cell.callBackAction1 = { [weak self] in
-            self?.indexMain != nil ? self?.callBackAction?(self?.indexMain! ?? 0) : ()
+            self?.indexMain != nil ? self?.callBackAction1?(self?.indexMain! ?? 0) : ()
         }
         return cell
     }

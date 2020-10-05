@@ -17,14 +17,14 @@ enum Filter: String, CaseIterable {
     case likes, aToZ, zToA
     case circle = "Circle"
     case rectangle = "Rectangle"
-    case custom = "Circle2"
-    case oval = "Circle3"
+    case custom = "Custom"
+    case oval = "Oval"
     case livingRoom = "Circle4"
     case devotional = "Circle5"
-    case bathroom = "Circle6"
-    case powderRoom = "Circle7"
+    case bathroom = "Bathroom"
+    case powderRoom = "Powder/Dresser"
     case otherProducts = "Circle8"
-    case kidsRoom = "Circle9"
+    case kidsRoom = "Kids"
     case nonFilter = "none"
 }
 
@@ -155,9 +155,9 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
                     } didLikeClosure: {
                         let index = self.cellViewModels?.firstIndex(where: { $0.name == model.name})
                         guard let idx = index else { return }
-//                        self.cellViewModels?[idx].didLike()
-//                        self.catalogClcView.reloadData()
-                        index != nil ? self.didLikeFor(index: index!) : ()
+                        self.cellViewModels?[idx].didLike()
+                        self.catalogClcView.reloadData()
+//                        index != nil ? self.didLikeFor(index: index!) : ()
                         // did like
                     } didShareWhatsapp: {
                         // did share
@@ -286,18 +286,6 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
         
     }
     
-//    func setOverlay() {
-//        overlay = UIView(frame: self.view.frame)
-//        overlay.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-//        self.view.addSubview(overlay)
-//    }
-//
-//    func removeOverlay() {
-//
-//        self.overlay.removeFromSuperview()
-//    }
-    
-    // filter action for every button using tag and enums
     
     @IBAction func filterByShapeBtn(_ sender: UIButton) {
         filterType = Filter.allCases[sender.tag]

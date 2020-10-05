@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="sophia_bella.ttf">
+            <string>SophiaBellaDEMO</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CatalogVC" customModule="Glazonoid" customModuleProvider="target">
             <connections>
@@ -27,11 +32,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Catalog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWF-4R-byS">
-                            <rect key="frame" x="145" y="37" width="124.5" height="35"/>
+                            <rect key="frame" x="147.5" y="37" width="119" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="35" id="g14-qj-fpr"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="SophiaBellaDEMO" family="Sophia Bella DEMO" pointSize="22"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -59,14 +64,15 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5i-L0-2Ns">
                     <rect key="frame" x="329" y="810" width="65" height="22"/>
-                    <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                    <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Filter" image="chart.bar.fill" catalog="system"/>
                     <connections>
                         <action selector="onClickFilterBtn:" destination="-1" eventType="touchUpInside" id="FPA-yw-3Wf"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWv-Dd-qWc">
-                    <rect key="frame" x="20" y="20" width="17.5" height="22"/>
+                    <rect key="frame" x="20" y="43.5" width="17.5" height="22"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" image="arrowtriangle.left.fill" catalog="system"/>
                     <connections>
@@ -559,22 +565,22 @@
             <constraints>
                 <constraint firstItem="eF3-dP-EcU" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1dh-AE-bqk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q5i-L0-2Ns" secondAttribute="trailing" constant="20" id="42q-eq-uk0"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="X23-V3-1VD" secondAttribute="bottom" id="7dv-wr-uwp"/>
+                <constraint firstAttribute="bottom" secondItem="X23-V3-1VD" secondAttribute="bottom" constant="34" id="7dv-wr-uwp"/>
                 <constraint firstItem="FDW-n2-OSQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Dh-vf-aal"/>
                 <constraint firstItem="FDW-n2-OSQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Er2-bv-ixx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FDW-n2-OSQ" secondAttribute="trailing" id="FHs-Bg-1gH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HRY-qe-gWs" secondAttribute="trailing" id="Fd9-Bd-DOx"/>
                 <constraint firstItem="kWv-Dd-qWc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Hl6-zI-uW0"/>
                 <constraint firstItem="X23-V3-1VD" firstAttribute="top" secondItem="HRY-qe-gWs" secondAttribute="bottom" id="MfN-Oy-pKM"/>
-                <constraint firstItem="kWv-Dd-qWc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Nyd-wM-vka"/>
                 <constraint firstItem="eF3-dP-EcU" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="TtG-bM-CaY"/>
+                <constraint firstItem="kWv-Dd-qWc" firstAttribute="centerY" secondItem="uWF-4R-byS" secondAttribute="centerY" id="VoM-mR-EPf"/>
                 <constraint firstItem="X23-V3-1VD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YNS-gp-hdm"/>
                 <constraint firstItem="HRY-qe-gWs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="e5y-66-iyy"/>
                 <constraint firstItem="HRY-qe-gWs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eV8-Vv-8Q0"/>
                 <constraint firstAttribute="top" secondItem="HRY-qe-gWs" secondAttribute="bottom" constant="-80" id="f0f-we-m5u"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X23-V3-1VD" secondAttribute="trailing" id="kaw-wj-6mR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q5i-L0-2Ns" secondAttribute="bottom" constant="30" id="oL3-Sw-AIs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FDW-n2-OSQ" secondAttribute="bottom" id="ofO-q3-AEN"/>
+                <constraint firstAttribute="bottom" secondItem="FDW-n2-OSQ" secondAttribute="bottom" constant="34" id="ofO-q3-AEN"/>
                 <constraint firstItem="eF3-dP-EcU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="osJ-v4-6bZ"/>
             </constraints>
             <point key="canvasLocation" x="311.59420289855075" y="255.80357142857142"/>
@@ -598,9 +604,6 @@
         <image name="z2a_sort" width="778" height="866"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="viewFlipsideBackgroundColor">
-            <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

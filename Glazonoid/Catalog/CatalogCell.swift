@@ -37,7 +37,14 @@ struct CatalogViewModel {
     }
     
     mutating func didLike() {
-        likes = likes + 1
+        isLiked = !isLiked
+        if isLiked{
+            likes += 1
+        }
+        else{
+            likes -= 1
+        }
+//        likes = likes + 1
         // to be sorted
 //        likes += 1
 //        isLiked

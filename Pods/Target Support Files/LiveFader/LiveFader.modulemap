@@ -1,0 +1,6 @@
+framework module LiveFader {
+  umbrella header "LiveFader-umbrella.h"
+
+  export *
+  module * { export * }
+}
