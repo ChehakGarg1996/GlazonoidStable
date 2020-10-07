@@ -34,6 +34,7 @@ class UserHandler {
     }
     
     static func delete() {
+//        GIDSignIn.sharedInstance()?.disconnect()
         UserDefaults.standard.removeObject(forKey: User.StorageKey)
     }
 }

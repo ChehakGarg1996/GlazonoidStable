@@ -24,19 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
         
         FirebaseApp.configure()
         
-      
+     
         
-        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID //"712706202212-hmrstko4obhl779af41f9m74kmp8tpj5.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
         
-//
-//        if GIDSignIn.sharedInstance().key() {
-//
-//        }
+
         
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
+//    func signin
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         
@@ -75,6 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
         
     }
     
+
     func loginButton(_ loginButton: FBLoginButton!, didCompleteWith result: LoginManagerLoginResult!, error: Error!) {
         if let error = error {
             print(error.localizedDescription)

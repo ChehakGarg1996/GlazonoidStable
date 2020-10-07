@@ -253,6 +253,9 @@ PODS:
   - Firebase/Database (6.31.0):
     - Firebase/CoreOnly
     - FirebaseDatabase (~> 6.5.0)
+  - Firebase/DynamicLinks (6.31.0):
+    - Firebase/CoreOnly
+    - FirebaseDynamicLinks (~> 4.3.0)
   - Firebase/Firestore (6.31.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.17.0)
@@ -282,6 +285,8 @@ PODS:
   - FirebaseDatabase (6.5.0):
     - FirebaseCore (~> 6.10)
     - leveldb-library (~> 1.22)
+  - FirebaseDynamicLinks (4.3.1):
+    - FirebaseCore (~> 6.10)
   - FirebaseFirestore (1.17.0):
     - abseil/algorithm (= 0.20200225.0)
     - abseil/base (= 0.20200225.0)
@@ -383,6 +388,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Firebase/DynamicLinks
   - Firebase/Firestore
   - GoogleSignIn
   - LiveFader
@@ -405,6 +411,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseDatabase
+    - FirebaseDynamicLinks
     - FirebaseFirestore
     - FirebaseInstallations
     - GoogleAppMeasurement
@@ -437,6 +444,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 6fb954e350af0885803d5aa49865d15d9a6b264c
   FirebaseCoreDiagnostics: 7415bfb3883b3500c5a95c42b6ba66baae78f600
   FirebaseDatabase: d85b47213273708e48c972012b39105f76229588
+  FirebaseDynamicLinks: 6eac37d86910382eafb6315d952cc44c9e176094
   FirebaseFirestore: ef0ad529a72c8e6542050dc7742fbd4cf009f297
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
   GoogleAppMeasurement: ecc30d0ab5b66d7d18e85ce1b8e2b345db60626d
@@ -454,6 +462,6 @@ SPEC CHECKSUMS:
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
 
-PODFILE CHECKSUM: 195775fdb953afbedb1345dca86a57f0ba215be8
+PODFILE CHECKSUM: 19d4b18b642b1e12d56c47fddd120935376fb33d
 
 COCOAPODS: 1.9.3

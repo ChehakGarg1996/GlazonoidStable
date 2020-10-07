@@ -36,13 +36,20 @@
 			</array>
 			<key>LSApplicationQueriesSchemes</key>
 			<array>
-				<string>instagram</string>
-				<string>fb</string>
+				<string>whatsapp</string>
 			</array>
-            <key>LSApplicationQueriesSchemes</key>
-             <array>
-                <string>whatsapp</string>
-             </array>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string></string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>glazo.app</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>glazonoidautomates.Glazonoid</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

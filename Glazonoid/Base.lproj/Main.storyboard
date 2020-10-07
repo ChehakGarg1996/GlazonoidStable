@@ -30,6 +30,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickSignUpBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGQ-bE-K0K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMB-dE-bEt">
                                 <rect key="frame" x="0.0" y="762" width="414" height="50"/>
@@ -40,6 +43,9 @@
                                 <state key="normal" title="SIGN IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickSignInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRK-cQ-yb8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiW-kU-7os" userLabel="Facebook">
                                 <rect key="frame" x="227" y="682" width="60" height="60"/>

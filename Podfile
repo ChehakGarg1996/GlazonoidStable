@@ -19,5 +19,5 @@ pod 'lottie-ios'
 pod 'ChromaColorPicker'
 pod 'SDWebImage', '~> 5.9'
 pod 'LiveFader'
-
+pod 'Firebase/DynamicLinks'
 end

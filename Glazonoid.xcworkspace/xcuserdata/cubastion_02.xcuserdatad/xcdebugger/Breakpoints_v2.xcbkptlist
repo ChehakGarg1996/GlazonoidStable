@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "215972E4-B37F-46B2-957A-4269725F283E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Glazonoid/CatalogCell.swift"
@@ -239,22 +239,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "08F524C0-A90A-4B51-8BEB-D9DB638843BD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Glazonoid/App dlegates/AppDelegate.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6AEE9C2D-D176-4595-95A1-F2E6426078C4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -262,8 +246,8 @@
             filePath = "Glazonoid/App dlegates/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "sign(_:didSignInFor:withError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -342,8 +326,8 @@
             filePath = "Glazonoid/App dlegates/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "loginButton(_:didCompleteWith:error:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -486,8 +470,8 @@
             filePath = "Glazonoid/App dlegates/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "sign(_:didSignInFor:withError:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -522,6 +506,85 @@
             endingLineNumber = "37"
             landmarkName = "delete()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D8300A8-29E6-4388-9C56-1E45EC1DB11F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Glazonoid/SignInVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "onClickLoginBtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B78ACD3-336B-4D4B-A726-2FF494555BA4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Glazonoid/SignUpVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "onClickSubmitBtn(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6B78ACD3-336B-4D4B-A726-2FF494555BA4 - a759261b9c7bafff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Glazonoid.SignUpVC.onClickSubmitBtn(__C.UIButton) -&gt; ()"
+                  moduleName = "Glazonoid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cubastion_02/Downloads/Swift%205/Glazonoid/Glazonoid/SignUpVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "6B78ACD3-336B-4D4B-A726-2FF494555BA4 - a759261b9c7bafff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Glazonoid.SignUpVC.onClickSubmitBtn(__C.UIButton) -&gt; ()"
+                  moduleName = "Glazonoid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cubastion_02/Downloads/Swift%205/Glazonoid/Glazonoid/SignUpVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1273">
+               </Location>
+               <Location
+                  uuid = "6B78ACD3-336B-4D4B-A726-2FF494555BA4 - 8d05e1e3c292ef08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Glazonoid.SignUpVC.onClickSubmitBtn(__C.UIButton) -&gt; ()"
+                  moduleName = "Glazonoid"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cubastion_02/Downloads/Swift%205/Glazonoid/Glazonoid/SignUpVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
