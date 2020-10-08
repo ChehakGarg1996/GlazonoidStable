@@ -30,13 +30,15 @@ class SignUpVC: UIViewController {
             if let error = error {
                 print("\(error.localizedDescription)")
             } else{
-                var user = firebase.auth().currentUser
-                user.sendEmail
+                var user = Auth.auth().currentUser
+                
                 let actionCodeSettings = ActionCodeSettings()
                 actionCodeSettings.handleCodeInApp = true
-                actionCodeSettings.url = URL(string: "https://www.example.com")
+                actionCodeSettings.url = URL(string: "https://glazonoidautomates.page.link")
                 actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
-              
+//                user?.sendEmailVerification(with: actionCodeSettings, completion: { error in
+//
+//                })
                 Auth.auth().sendSignInLink(toEmail:emailField.text ?? "no email found" ,
                                            actionCodeSettings: actionCodeSettings) { error in
                   // ...
@@ -45,7 +47,7 @@ class SignUpVC: UIViewController {
                     }
                    
                     print("verified")
-                    
+                    if ((user?.isEmailVerified) != nil)  {
                     UserDefaults.standard.set(emailField.text!, forKey: "Email")
                     let link = "glazonoidautomates.page.link"
                     if Auth.auth().isSignIn(withEmailLink: link) {
@@ -61,6 +63,7 @@ class SignUpVC: UIViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }}
     }
+}
 }
 }
 

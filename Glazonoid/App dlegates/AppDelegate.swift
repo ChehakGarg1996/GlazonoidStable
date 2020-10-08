@@ -19,21 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
     
     
     var window: UIWindow?
+    var imageView : UIImageView?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
         
-     
-        
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
-        
-
-        
+//        NotificationCenter.default.addObserver(self, selector: <#T##Selector#>, name: UIApplication.userDidTakeScreenshotNotification , object: <#T##Any?#>)
+//
+//        
         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
+    
+    
 //    func signin
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
@@ -124,5 +125,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
         
     }
     
+    func applicationWillResignActive(_ application: UIApplication) {
+        imageView = UIImageView.init(image: UIImage.init(named:"blackscreen"))
+        self.window?.addSubview(imageView!)
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        if imageView != nil{
+        imageView?.removeFromSuperview()
+    }
+    
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        return
+    }
 
 }

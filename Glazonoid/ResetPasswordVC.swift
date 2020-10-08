@@ -19,7 +19,9 @@ class ResetPasswordVC: UIViewController {
     }
 
     @IBAction func onClickSubmitBtn(_ sender: UIButton) {
+        Auth.auth().sendPasswordReset(withEmail: emailField.text!) { error in
         
+        }
         
         
     }
