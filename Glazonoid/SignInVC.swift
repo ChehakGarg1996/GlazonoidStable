@@ -24,6 +24,9 @@ class SignInVC: UIViewController {
     
     @IBAction func onClickForgotPassBtn(_ sender: UIButton) {
         
+    let vc = ResetPasswordVC()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     @IBAction func onClickLoginBtn(_ sender: Any) {
         

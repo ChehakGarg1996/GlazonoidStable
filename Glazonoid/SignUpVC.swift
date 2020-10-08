@@ -30,7 +30,8 @@ class SignUpVC: UIViewController {
             if let error = error {
                 print("\(error.localizedDescription)")
             } else{
-                
+                var user = firebase.auth().currentUser
+                user.sendEmail
                 let actionCodeSettings = ActionCodeSettings()
                 actionCodeSettings.handleCodeInApp = true
                 actionCodeSettings.url = URL(string: "https://www.example.com")
