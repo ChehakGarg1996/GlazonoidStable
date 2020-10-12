@@ -38,6 +38,10 @@
 			<array>
 				<string>whatsapp</string>
 			</array>
+            <key>FirebaseDynamicLinksCustomDomains</key>
+            <array>
+              <string>https://glazonoidautomates.page.link</string>
+            </array>
 		</dict>
 		<dict>
 			<key>CFBundleIdentifier</key>
@@ -48,7 +52,7 @@
 			<string>glazo.app</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>glazonoidautomates.Glazonoid</string>
+				<string>glazonoidautomates.Glazonoid1</string>
 			</array>
 		</dict>
 	</array>

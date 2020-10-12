@@ -34,7 +34,8 @@ class SignUpVC: UIViewController {
                 
                 let actionCodeSettings = ActionCodeSettings()
                 actionCodeSettings.handleCodeInApp = true
-                actionCodeSettings.url = URL(string: "https://glazonoidautomates.page.link")
+                actionCodeSettings.url = URL(string:"https://com.glazonoid")
+//                actionCodeSettings.url = URL(string: "https://glazonoidautomates.page.link")
                 actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
 //                user?.sendEmailVerification(with: actionCodeSettings, completion: { error in
 //
