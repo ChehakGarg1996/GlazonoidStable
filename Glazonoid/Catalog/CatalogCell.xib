@@ -72,14 +72,14 @@
                                     <constraint firstAttribute="width" constant="30" id="4vV-Vg-h37"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catalog3" translatesAutoresizingMaskIntoConstraints="NO" id="r3L-AY-4jh">
-                                <rect key="frame" x="0.0" y="40" width="455" height="280"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catalog3" translatesAutoresizingMaskIntoConstraints="NO" id="r3L-AY-4jh">
+                                <rect key="frame" x="0.0" y="40" width="455" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="VkN-KK-FeZ"/>
+                                    <constraint firstAttribute="height" id="Q73-Ko-HNw"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTN-Bh-baK">
-                                <rect key="frame" x="0.0" y="320" width="455" height="40"/>
+                                <rect key="frame" x="0.0" y="40" width="455" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgs-Y0-uhJ">
                                         <rect key="frame" x="8" y="0.0" width="30" height="40"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="l,kugdsfgjgyuioykjtdhgsrhfghijohgffghijiugyfthdrgsdhfjghijoiugyfdgcnhjoihuyftdfxvbfghjiohugyfthdfxbchjihugyfdxbcghjkl" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAI-cG-pcl">
-                                <rect key="frame" x="10" y="360" width="435" height="210"/>
+                                <rect key="frame" x="10" y="80" width="435" height="490"/>
                                 <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -166,6 +166,7 @@
                 <outlet property="btnSave" destination="2vP-aY-JSR" id="tAY-mn-ZkJ"/>
                 <outlet property="btnShare" destination="qcA-M8-DjR" id="gie-9H-PIu"/>
                 <outlet property="imageDisplay" destination="r3L-AY-4jh" id="k1s-Wu-3VB"/>
+                <outlet property="imageHeight" destination="Q73-Ko-HNw" id="Xgi-z4-ftD"/>
                 <outlet property="lblDescription" destination="RAI-cG-pcl" id="sSq-bD-uYe"/>
                 <outlet property="lblHeading" destination="jYE-HH-Lnh" id="O95-ql-XPv"/>
                 <outlet property="likeBtn" destination="lgs-Y0-uhJ" id="YqR-Ub-1So"/>

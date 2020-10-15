@@ -56,9 +56,7 @@ class ViewController: UIViewController, LoginButtonDelegate  {
             
             let VC = HomeVC()
             self.navigationController?.pushViewController(VC, animated: true)
-            //            self.performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
-            
-            // self.performSegue(withIdentifier: self.signInSegue, sender: nil)
+        
         }
         }
         
@@ -81,17 +79,14 @@ class ViewController: UIViewController, LoginButtonDelegate  {
         
         let loginButton = FBLoginButton()
         loginButton.delegate = self
-        //loginButton.center = view.center
-        //view.addSubview(loginButton)
-        //loginButton.sendActions(for: .touchUpInside)
-        //loginButton.permissions = ["public_profile", "email"]
+    
         if let token = AccessToken.current,
            !token.isExpired {
             let VC = HomeVC()
             self.navigationController?.pushViewController(VC, animated: true)
             // User is logged in, do work such as go to next view controller.
             //            performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
-            //tempVal = 1
+            tempVal = 1
             
             
         }
@@ -104,6 +99,7 @@ class ViewController: UIViewController, LoginButtonDelegate  {
             
         }else {
             print("Signing in")
+            tempVal = 0
             //  GIDSignIn.sharedInstance()?.presentingViewController = self
             //        GIDSignIn.sharedInstance().signIn()
             //GIDSignIn.sharedInstance()?.signIn()
@@ -123,17 +119,17 @@ class ViewController: UIViewController, LoginButtonDelegate  {
     
     
     
-    //    override func viewDidAppear(_ animated: Bool) {
-    //
-    //        if tempVal == 1{
-    //            let VC = HomeVC()
-    //            self.navigationController?.pushViewController(VC, animated: false)
-    //            //            performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
-    //
-    //        }
-    //
-    //
-    //    }
+        override func viewDidAppear(_ animated: Bool) {
+//    
+//            if tempVal == 1{
+//                let VC = HomeVC()
+//                self.navigationController?.pushViewController(VC, animated: false)
+////                            performSegue(withIdentifier: "defaultHomeScreenSeg", sender: self)
+//    
+//            }
+    
+    
+        }
     
     @objc func didSignIn()  {
         let VC = HomeVC()

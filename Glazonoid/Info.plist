@@ -18,7 +18,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -34,14 +34,14 @@
 			<array>
 				<string>com.googleusercontent.apps.845031662262-jcpoi9tdcjnu0aa4ak7hrqomgi29uiqg</string>
 			</array>
+			<key>FirebaseDynamicLinksCustomDomains</key>
+			<array>
+				<string>https://glazonoidautomates.page.link</string>
+			</array>
 			<key>LSApplicationQueriesSchemes</key>
 			<array>
 				<string>whatsapp</string>
 			</array>
-            <key>FirebaseDynamicLinksCustomDomains</key>
-            <array>
-              <string>https://glazonoidautomates.page.link</string>
-            </array>
 		</dict>
 		<dict>
 			<key>CFBundleIdentifier</key>

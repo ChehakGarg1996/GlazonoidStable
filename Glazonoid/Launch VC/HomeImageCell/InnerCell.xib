@@ -23,8 +23,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iAK-E4-bRn">
                                 <rect key="frame" x="0.0" y="0.0" width="238" height="239"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tep-iu-Q0R">
-                                        <rect key="frame" x="0.0" y="7.5" width="168" height="224"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tep-iu-Q0R">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="239"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-d2-EP9">
@@ -56,6 +56,10 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="tep-iu-Q0R" secondAttribute="bottom" id="M3m-mz-vpn"/>
+                                    <constraint firstItem="tep-iu-Q0R" firstAttribute="top" secondItem="iAK-E4-bRn" secondAttribute="top" id="uDn-dg-NBY"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

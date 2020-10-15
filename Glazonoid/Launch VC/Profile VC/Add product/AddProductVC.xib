@@ -69,7 +69,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35D-h8-a52">
-                    <rect key="frame" x="20" y="20" width="17.5" height="22"/>
+                    <rect key="frame" x="20" y="64" width="17.5" height="22"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" image="arrowtriangle.left.fill" catalog="system"/>
                     <connections>
@@ -82,11 +82,11 @@
             <constraints>
                 <constraint firstItem="z35-cs-Eu7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="5eO-j0-xHb"/>
                 <constraint firstItem="z35-cs-Eu7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="AB1-HW-nYf"/>
+                <constraint firstItem="35D-h8-a52" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ign-EW-eFQ"/>
                 <constraint firstItem="MOt-Mk-QWt" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.88" id="Q5r-kr-sU7"/>
-                <constraint firstItem="35D-h8-a52" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wp7-GF-vxK"/>
+                <constraint firstItem="35D-h8-a52" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="f1h-F7-Xeq"/>
                 <constraint firstItem="MOt-Mk-QWt" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ulQ-Lv-mDX"/>
                 <constraint firstItem="MOt-Mk-QWt" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wo8-UG-F6b"/>
-                <constraint firstItem="35D-h8-a52" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="yhc-xt-h0l"/>
                 <constraint firstItem="MOt-Mk-QWt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="yvi-Hj-spN"/>
             </constraints>
             <point key="canvasLocation" x="106" y="81"/>

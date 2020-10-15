@@ -125,7 +125,7 @@ class HomeCell: UICollectionViewCell , UICollectionViewDataSource , UICollection
         {
             cell.imgVIew.image = UIImage(named:array3[indexPath.row])
             headingLbl.text = "Wifi Mirror Remote"
-//            headingLbl.numberOfLines = 2
+            headingLbl.numberOfLines = 2
             self.screenNumberView.image = UIImage(named: "zero_three")
             backAnimationV.isHidden = false
             animationView.isHidden = true

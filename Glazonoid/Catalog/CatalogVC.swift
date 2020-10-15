@@ -66,6 +66,7 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
                 cellViewModels = originalViewModels
             }
             self.filterView.isHidden = true
+            self.overlayView.isHidden = true
             self.catalogClcView.reloadData()
         }
     }
@@ -91,6 +92,7 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
         fetchData()
         self.catalogClcView .register(UINib (nibName: "CatalogCell", bundle: nil), forCellWithReuseIdentifier: "cell")
         filterView.isHidden = true
+//        overlayView.isHidden = true
         filterType = .nonFilter
     }
     
@@ -175,7 +177,7 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
     
     func shareonWhatsapp(index : Int){
         let urlWhats = "whatsapp://app"
-        if let urlString = urlWhats.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed) {
+        if let urlString = urlWhats.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
             
             if let whatsappURL = URL(string: urlString) {
                 
@@ -240,6 +242,11 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  self.catalogClcView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CatalogCell else { return UICollectionViewCell() }
+        
+        let ratio = cell.imageDisplay.frame.width / cell.imageDisplay.frame.height
+        let newHeight = cell.imageDisplay.frame.width / ratio
+        cell.imageHeight.constant = newHeight
+        view.layoutIfNeeded()
         // to store all cells
         if status == true{
             cell.viewModel = cellViewModels?[indexPath.item]

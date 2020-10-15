@@ -59,6 +59,7 @@ struct CatalogViewModel {
 class CatalogCell: UICollectionViewCell {
 
   
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var likeCountLbl: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
@@ -81,7 +82,6 @@ class CatalogCell: UICollectionViewCell {
             imageDisplay.sd_setImage(with: URL(string: viewModel?.imageUrl ?? ""), placeholderImage: UIImage(named: "default_placeholder"), options: [.allowInvalidSSLCertificates,.continueInBackground], context: nil)
         }
     }
-
     
     @IBAction func onClickBookmarkBtn(_ sender: UIButton) {
         viewModel?.didSelectBookmark?()
