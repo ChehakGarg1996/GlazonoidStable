@@ -25,9 +25,14 @@ class ProfileVC: UIViewController {
         profileImage.layer.cornerRadius = profileImage.frame.height/2
         userName.text = user?.name
         userEmail.text = user?.email
+        if user?.image != nil {
         let data = NSData(contentsOf:(user?.image)!) ?? nil
         if data != nil {
             profileImage.image = UIImage(data:data! as Data)
+        }
+        }
+        else{
+            profileImage.image = UIImage(named: "user")
         }
         debugPrint(user)
     }
@@ -117,7 +122,8 @@ class ProfileVC: UIViewController {
             try firebaseAuth.signOut()
             if self.presentingViewController != nil {
                 self.dismiss(animated: false, completion: {
-                    UserDefaults.standard.removeObject(forKey: User.StorageKey).self
+                    UserHandler.delete()
+//                    UserDefaults.standard.removeObject(forKey: User.StorageKey).self
                     
 //                    GIDSignIn.sharedInstance()?.disconnect()
 

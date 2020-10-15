@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
                         authToken: profile.providerID ,
                         name: profile.displayName!,
                         email: profile.email! ,
-                        image: profile.photoURL ?? nil)
+                        image: profile.photoURL ?? nil )
                     
                     UserHandler.save(user1)
                     

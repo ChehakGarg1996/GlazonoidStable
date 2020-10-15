@@ -243,9 +243,9 @@ class CatalogVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  self.catalogClcView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CatalogCell else { return UICollectionViewCell() }
         
-        let ratio = cell.imageDisplay.frame.width / cell.imageDisplay.frame.height
-        let newHeight = cell.imageDisplay.frame.width / ratio
-        cell.imageHeight.constant = newHeight
+//        let ratio = cell.imageDisplay.frame.width / cell.imageDisplay.frame.height
+//        let newHeight = cell.imageDisplay.frame.width / ratio
+        cell.imageHeight.constant = 250
         view.layoutIfNeeded()
         // to store all cells
         if status == true{

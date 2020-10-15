@@ -29,7 +29,7 @@ class SignUpVC: UIViewController {
     
     @IBAction func onClickSubmitBtn(_ sender: UIButton) {
         
-        if nameField.text != nil && emailField.text != nil && mobileField.text != nil && passwordField.text != nil  {
+        if (nameField.text != nil && emailField.text != nil && mobileField.text != nil && passwordField.text != nil) {
             
             Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { [self] authResult, error in
                 
@@ -38,16 +38,20 @@ class SignUpVC: UIViewController {
                     print("\(error.localizedDescription)")
                 } else {
                     
-                  
+//                    let data = try? Data(contentsOf: URL(string: "user")!)
+//                    let image = UIImage(data: data!)
                     if let user = Auth.auth().currentUser {
                     for profile in user.providerData {
-                        
+//                        let image = UIImage()
+//                        if profile.photoURL == nil {
+//                            profile.photoURL = UIImage()
+//                        }
                         let user1 = User(
                             userId: profile.uid,
                             authToken: profile.providerID ,
                             name: profile.displayName ?? "",
                             email: profile.email ?? "" ,
-                            image: profile.photoURL ?? Data(contentsOf: URL(string: "user")),
+                            image: profile.photoURL ?? nil )
                         
                         UserHandler.save(user1)
                         
