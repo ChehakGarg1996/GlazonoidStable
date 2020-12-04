@@ -23,14 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
     var imageView : UIImageView?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if (UserHandler.user != nil) {
+            
+            self.window?.rootViewController?.navigationController?.pushViewController(HomeVC() , animated: true)
+                    }
+        else{
+            
+        }
         
         FirebaseApp.configure()
         
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance()?.delegate = self
-        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        
+//        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         return true
     }

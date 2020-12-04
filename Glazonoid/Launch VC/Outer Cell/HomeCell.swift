@@ -164,14 +164,14 @@ extension HomeCell : UICollectionViewDelegateFlowLayout{
         // if remote , then increase height after 2 cell which incldes button
         if indexMain == 2{
             if indexPath.row > 0 {
-            return CGSize(width: 260 + 60 + 10, height: self.innerClcView.frame.height);
+            return CGSize(width: 270 + 60 + 10, height: self.innerClcView.frame.height);
         }
             // if catalog/technology , increase height after 3  cell which includes button
         }
         if indexPath.row > 1 {
-            return CGSize(width: 260 + 60 + 10, height: self.innerClcView.frame.height);
+            return CGSize(width: 270 + 60 + 10, height: self.innerClcView.frame.height);
         }
-        return CGSize(width: 260, height: self.innerClcView.frame.height);
+        return CGSize(width: 270, height: self.innerClcView.frame.height);
         
     }
     

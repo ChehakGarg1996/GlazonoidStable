@@ -27,7 +27,7 @@ class RemoteVC: UIViewController {
         VolumeProgress.faderEnabledForegroundColor = UIColor.red
         VolumeProgress.direction = .vertical
         VolumeProgress.style = .fromBottom
-        let colorPicker = ChromaColorPicker(frame: CGRect(x: 20, y: 10, width: 150, height: 150))
+        let colorPicker = ChromaColorPicker(frame: CGRect(x: 40, y: 10, width: 150, height: 150))
         self.colorView.addSubview(colorPicker)
         let peachColor = UIColor(red: 1, green: 203 / 255, blue: 164 / 255, alpha: 1)
         colorPicker.addHandle(at: peachColor)
